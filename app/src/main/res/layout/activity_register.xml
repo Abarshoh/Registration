@@ -7,13 +7,13 @@
     android:background="@color/black_"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context=".LoginActivity"
-    android:paddingHorizontal="18dp">
+    android:paddingHorizontal="18dp"
+    tools:context=".RegisterActivity">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Login"
+        android:text="Registration"
         android:textAllCaps="true"
         android:textColor="@color/my_blue"
         android:textSize="32sp" />
@@ -28,7 +28,7 @@
         app:boxStrokeColor="@color/my_blue">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/nameInputLog"
+            android:id="@+id/nameInputReg"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:backgroundTint="@color/black_"
@@ -49,7 +49,7 @@
         app:passwordToggleTint="#FF48484A">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/passwordInputLog"
+            android:id="@+id/passwordInputReg"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:backgroundTint="@color/black_"
@@ -67,27 +67,67 @@
         android:textSize="13sp" />
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/signInLog"
+        android:id="@+id/signUpReg"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginTop="32dp"
         android:backgroundTint="@color/my_blue"
         android:insetTop="0dp"
         android:insetBottom="0dp"
-        android:text="Sign In"
+        android:text="Sign Up"
         android:textAllCaps="false"
         android:textColor="@color/black"
         android:textSize="16sp"
         app:cornerRadius="0dp" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="82dp"
+        android:text="Other sign in options"
+        android:textColor="@color/text_color"
+        android:textSize="13sp" />
 
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginEnd="12dp"
+            android:background="@drawable/circle"
+            android:padding="8dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/google" />
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginEnd="12dp"
+            android:background="@drawable/circle"
+            android:padding="8dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/facebook" />
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginEnd="12dp"
+            android:background="@drawable/circle"
+            android:padding="10dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/aple" />
+    </LinearLayout>
 
     <TextView
-        android:id="@+id/signUpLog"
+        android:id="@+id/signInReg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="Sign up"
+        android:text="Sign in"
         android:textColor="@color/white" />
 
 
